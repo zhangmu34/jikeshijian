@@ -84,29 +84,29 @@ RC可以查看到每次事务提交后生成的新的，未提交的无法看到
 
 1.
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-36-13.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-36-13.png)
 
 2.
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-37-45.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-37-45.png)
 
 3.
 
 T6时间 ，查询为**刘备**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-38-43.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-38-43.png)
 
 4.
 
 T8时间 ，查询为**刘备**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-40-29.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-40-29.png)
 
 5.
 
 T10时间 ，查询为**刘备**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-41-33.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_21-41-33.png)
 
 **结论**
 
@@ -160,13 +160,13 @@ Select 频繁查询的列
 
 sql语句前加explain，type里的结果值就是是否使用索引
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-24_18-26-08.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-24_18-26-08.png)
 
 **请你解释一下索引的原理是什么？【重点】**
 
 索引是一个B+Tree树
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-24_18-37-36.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-24_18-37-36.png)
 
 只有叶子节点才会存储数据，非叶子节点只存储键值。叶子节点之间使用双向指针连接，最
 底层的叶子节点形成了一个双向有序链表。
@@ -222,7 +222,7 @@ MVCC 的实现依赖是Undo日志 与 Read View
 
 回滚日志，Undo日志保存了记录修改前的快照，在操作失败需要回滚的时候，用undo信息回滚到修改之前的样子，有了Undo日志可以做到读不加锁，读写不冲突。
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_22-21-58.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_22-21-58.png)
 
 根据行为的不同Undo日志分为两种： Insert Undo Log 和 Update Undo Log
 
@@ -248,7 +248,7 @@ Update操作会对已经存在的行记录产生影响，为了实现MVCC多版�
 ReadView是张存储事务id的表，主要包含当前系统中有哪些活跃的读写事务，把它们的事务id放到一个
 列表中。结合Undo日志的默认字段【事务trx_id】来控制那个版本的Undo日志可被其他事务看见。
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_22-22-26.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_22-22-26.png)
 
 m_ids：表示在生成ReadView时，当前系统中活跃的读写事务id列表
 
