@@ -27,33 +27,33 @@
 
 1.
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_17-59-25.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_17-59-25.png)
 
 2.
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-08-46.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-08-46.png)
 
 3.
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-10-25.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-10-25.png)
 
 4.
 
 按照顺序执行到T6，查询信息为**刘备**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-50-35.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-22_18-50-35.png)
 
 5.
 
 T8时间段，事务1已提交，查询信息为**张飞**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_00-02-40.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_00-02-40.png)
 
 6.
 
 T10时间段，事务2已提交， 查询信息为**诸葛亮**
 
-https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_00-04-39.png
+![Snipaste_2022-10-22_17-59-25](https://github.com/zhangmu34/jikeshijian/blob/main/8/Snipaste_2022-10-23_00-04-39.png)
 
 **结论**
 
